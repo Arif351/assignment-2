@@ -16,14 +16,19 @@
     margin-bottom: 0%;
 }
 
-.head-img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 10%;
-    padding: 10px 0;
+.heading-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
+
+}
+
+.heading-img .head-data {
+    margin-left: 100px;
+}
+
+.heading-img .head-img {
+    margin-left: 120px;
 }
 
 .head-data a {
