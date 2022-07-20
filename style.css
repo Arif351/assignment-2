@@ -88,13 +88,13 @@ a {
 /* -----------head section end---  */
 .upcoming {
 
-    height: 240px;
+    height: 250px;
     width: auto;
     text-align: center;
     padding: 20px;
     background-color:
         #161616;
-    margin-left: 5%;
+    margin-left: 3%;
     border-radius: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -114,7 +114,7 @@ a {
 
 .upcoming .upcoming1 a h4:hover {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(5, 5, 5);
     background-color: white;
 
@@ -152,7 +152,8 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     gap: 20px;
-    margin-right: 5%;
+    margin-left: 10px;
+    margin-right: 80px;
 
 }
 
@@ -238,8 +239,8 @@ footer {
 }
 
 .footer-info {
-
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .footer-info h1 {
@@ -260,7 +261,7 @@ footer {
 }
 
 .footer-info-menu {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 20px;
     text-align: center;
 }
@@ -275,6 +276,21 @@ footer {
     color: white;
     text-decoration: none;
     margin: 10px;
+}
+
+.media {
+    text-align: center;
+}
+
+.media a i {
+    color: rgb(193, 214, 255);
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.media a i:hover {
+    cursor: pointer;
+    font-size: 25px;
 }
 
 /* -----footer media quary------  */
@@ -292,5 +308,11 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .media a {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 15px;
     }
 }
