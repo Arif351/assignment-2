@@ -49,9 +49,10 @@ a {
 
 .fa-circle-arrow-right {
     color: white;
-    /* -------------media quaries-------- */
-    /* ------------mobile devices---------- */
 }
+
+/* -------------media quaries-------- */
+/* ------------mobile devices---------- */
 
 @media only screen and (max-width:688px) {
     .head .heading-img {
@@ -84,6 +85,43 @@ a {
 
     }
 }
+
+/*-------------heading quary ipad start --------  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .head .heading-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading-img .head-data {
+        margin: 0 4%;
+    }
+
+    .head-data a {
+        margin-top: 30%;
+        margin-left: 30%;
+    }
+
+    .head-data p {
+        text-align: left;
+        margin-bottom: 10%;
+    }
+
+    .head-data h1 {
+        text-align: left;
+    }
+
+    .heading-img .head-img img {
+        width: 95%;
+        margin-top: 10%;
+        margin-left: 3%;
+
+    }
+
+
+}
+
+/*-------------heading quary ipad end --------  */
 
 /* -----------head section end---  */
 .upcoming {
@@ -193,7 +231,7 @@ h3 {
     margin-right: 40px;
 }
 
-/* ---------section2 device query--------  */
+/* ---------section2 part1 mobile device query start--------  */
 @media only screen and (max-width:688px) {
     .head2 {
         display: grid;
@@ -206,12 +244,30 @@ h3 {
         margin: 2% 5%;
 
     }
-
-
-
 }
 
-@media only screen and (max-width:688px) {
+
+/* ---------section2 part1 mobile device query end--------  */
+/* ---------section2 part1 ipad query start--------  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .head2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upcoming {
+        justify-content: center;
+        align-items: center;
+        margin: 2% 5%;
+
+    }
+}
+
+/* ---------section2 part1 ipad query end--------  */
+
+
+/* -------------------section2 part 2 mobile quary start---------  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
     .img-info-head {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
@@ -230,89 +286,134 @@ h3 {
 
 
 
-/* -----------section2 end---- */
-footer {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-    background-color: rgb(31, 29, 29);
-    margin: 20px 0;
-}
-
-.footer-info {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.footer-info h1 {
-    font-size: 40px;
-    color: white;
-    padding-bottom: 20px;
-    text-align: center;
-
-}
-
-.footer-info hr {
-    width: 80%;
-}
-
-.footer-hr hr {
-    color: #535353;
-    opacity: 40%;
-}
-
-.footer-info-menu {
-    padding-bottom: 50px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.footer-info-menu .pointer:hover {
-    cursor: pointer;
-    font-size: 18px;
-    color: aqua;
-}
-
-.footer-info-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.media {
-    text-align: center;
-}
-
-.media a i {
-    color: rgb(193, 214, 255);
-    font-size: 20px;
-    margin: 0 10px;
-}
-
-.media a i:hover {
-    cursor: pointer;
-    font-size: 25px;
-}
-
-/* -----footer media quary------  */
-@media only screen and (max-width:688px) {
-    .footer-info {
-        width: 100%;
-    }
-
-    .footer-hr {
-        width: 90%;
+/* -------------------section2 part 2 mobile quary end---------  */
+/* =================================== */
+/* -------------------section2 part 2 ipad quary start---------  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .img-info-head {
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
 
+    .img-info {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timing {
+        margin: 0 auto;
+    }
+
+
+    /* -------------------section2 part 2 ipad quary end---------  */
+    footer {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+        background-color: rgb(31, 29, 29);
+        margin: 20px 0;
+    }
+
+    .footer-info {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .footer-info h1 {
+        font-size: 40px;
+        color: white;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .footer-info hr {
+        width: 80%;
+    }
+
+    .footer-hr hr {
+        color: #535353;
+        opacity: 40%;
+    }
+
     .footer-info-menu {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
+        padding-bottom: 50px;
+        padding-top: 20px;
+        text-align: center;
     }
 
-    .media a {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 15px;
+    .footer-info-menu .pointer:hover {
+        cursor: pointer;
+        font-size: 18px;
+        color: aqua;
     }
-}
+
+    .footer-info-menu a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .media {
+        text-align: center;
+    }
+
+    .media a i {
+        color: rgb(193, 214, 255);
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .media a i:hover {
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    /* -----footer media quary------  */
+    @media only screen and (max-width:688px) {
+        .footer-info {
+            width: 100%;
+        }
+
+        .footer-hr {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .footer-info-menu {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .media a {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 15px;
+        }
+    }
+
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        .footer-info {
+            width: 100%;
+        }
+
+        .footer-hr {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .footer-info-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    /* -----------  */
